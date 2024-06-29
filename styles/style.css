@@ -1,29 +1,21 @@
-html {
-  font-size: 10px;
-  font-family: "Open Sans", sans-serif;
-  background-color: rgb(0, 0, 0);
+/* Animation Styles */
+
+.animation-downwardsFade {
+  animation: downwardsFade 1s ease-out 1s 1 normal both;
 }
 
-body {
-  width: 600px;
-  height: 100vh;
-  margin: 0 auto;
-  padding: 0 20px 20px 20px;
-  background-color: rgb(29, 29, 29);
-  background-image: url("../images/noise.png");
-  background-size: 512px;
-  background-position: center;
-  background-repeat: repeat;
+.animation-basicFade {
+  animation: basicFade 0.5s ease-in 0s 1 normal both;
 }
-  
-.animation-downwardsFade {
-  animation: 1s ease-out 1s 1 normal both downwardsFade
+
+.animation-leftSlide {
+  animation: leftSlide 1s ease-in 1s 1 normal both;
 }
 
 @keyframes downwardsFade {
   from {
     opacity: 0;
-    transform: translateY(-25px);
+    transform: translateY(-40px);
   }
   to {
     opacity: 1;
@@ -31,15 +23,35 @@ body {
   }
 }
 
-h1 {
+@keyframes basicFade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes leftSlide {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* General Class Styles*/
+
+.pageTitle {
   font-size: 40px;
   text-align: center;
   margin: 20px 0;
-  padding: 40px 0 0 0;
-  color: #c9c9c9;
+  padding: 20px 0 0 0;
+  color: #ababab;
 }
 
-h2 {
+.pageSubtitle {
   font-size: 16px;
   text-align: center;
   margin: 0;
@@ -53,6 +65,40 @@ h2 {
   border: 3px solid green; 
 }
 
+.oldwebbutton {
+  width: initial;
+}
+
+.header {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  padding: 20px 10px;
+}
+
+/* Element  Styles */
+
+html {
+  font-size: 10px;
+  font-family: "Open Sans", sans-serif;
+  background-color: rgb(6, 6, 6);
+}
+
+body {
+  width: 600px;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 0 20px 20px 20px;
+  background-color: rgb(28, 28, 28);
+  background-image: url("../images/noise.png");
+  background-size: 512px;
+  background-position: center;
+  background-repeat: repeat;
+}
+
+div {
+  display: inline;
+}
+
 button {
   justify-content: center;
 }
@@ -61,12 +107,4 @@ img {
   display: block;
   margin: 0 auto;
   width: 500px;
-}
-
-.oldwebbutton {
-  width: initial;
-}
-
-div {
-  display: inline;
 }
