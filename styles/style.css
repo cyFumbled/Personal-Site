@@ -138,6 +138,24 @@
   width: initial;
 }
 
+#headerBar {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#headerIcon {
+  width: 3%;
+  height: 3%;
+  margin: auto;
+}
+
+#headerTitle {
+  font-size: 200%;
+  font-weight: 500;
+  margin: 0 0 0 23%;
+}
+
 
 /* Element  Styles */
 
@@ -165,6 +183,6 @@ header {
   background-color: #898989;
   padding: 0;
   margin: 0;
-  height: 5%;
+  height: 2%;
   text-align: center;
 }
