@@ -14,45 +14,38 @@
     <meta name="description" content="Cyfumbled's web sandbox." />
     <meta name="viewport" content="width=device-width" />
     
-    <title>My test page</title>
+    <title>Home Page - Cy's Personal Website</title>
   </head>
   <body>
 
     <header>
       <ul id="headerBar">
         <p id="headerTitle">Cyfumbled's Website</p>
-        <img id="headerIcon" src="images/homeIcon.png"></img>
+        <img id="headerIcon" src="images/homeIcon.png" onclick="location.href='index.html';"></img>
       </ul>
+
     </header>
 
     <div id="mainContent" class="animation-basicFade">
       <h1 class="pageTitle animation-basicFade">Cy's Home Page</h1>
       <h2 class="pageSubtitle animation-downwardsFade">Click a button to be directed to the labled category</h2> 
 
-        <div class="center">
-          <button class="categoryButton animation-leftSlide">
-            <p class="buttonText">Account Directory</p>
-          </button>
-        </div>
-        
-        <div class="center">
-          <button  class="categoryButton animation-leftSlide">
-            <p class="buttonText">Competitive Statistics</p>
-          </button>
-        </div>
+      <div class="homeCategoryButton animation-leftSlide animation-1750msDelay" onclick="location.href='accountDirectory.html';">
+        <p class="buttonText">Account Directory</p>
+      </div>
 
-        <h2 class="pageSubtitle animation-basicFade" id="homePageTeaser">These categories are in progress</h2>
+      <div class="homeCategoryButton animation-leftSlide animation-1750msDelay" onclick="location.href='accountDirectory.html';">
+        <p class="buttonText">Competitive Statistics</p>
+      </div>
 
-        <div class="center">
-          <button class="category2Button animation-basicFade">
-            <p class="buttonText">Gaming Catalog</p>
-          </button>
+        <h2 class="pageSubtitle animation-basicFade" id="homePageTeaser">The categories below are in progress</h2>
+
+        <div class="homeCategoryButton animation-leftSlide animation-3500msDelay" onclick="location.href='accountDirectory.html';">
+          <p class="buttonText">Gaming Catalog</p>
         </div>
-        
-        <div class="center"> 
-          <button class="category2Button animation-basicFade">
-            <p class="buttonText">Personal Details</p>
-          </button>
+  
+        <div class="homeCategoryButton animation-leftSlide animation-3500msDelay" onclick="location.href='accountDirectory.html';">
+          <p class="buttonText">Personal Details</p>
         </div>
 
     </div>

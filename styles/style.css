@@ -12,6 +12,14 @@
   animation: leftSlide 1s ease-out 2s 1 normal backwards;
 }
 
+.animation-1750msDelay {
+  animation-delay: 1750ms;
+}
+
+.animation-3500msDelay {
+  animation-delay: 3500ms;
+}
+
 #homePageTeaser {
   animation-delay: 3s;
 }
@@ -52,6 +60,7 @@
 #mainContent {
   width: 600px;
   height: 100vh;
+  min-height: 500px;
   margin: 0 auto;
   padding: 0 20px 20px 20px;
   background-color: rgb(28, 28, 28);
@@ -79,63 +88,31 @@
   color: #6c6c6c;
 }
 
-
-.center {
-  margin: 10px 10%;
-  position: relative;
+.homeCategoryButton {
   height: 50px;
-  text-align: center;
-  border-radius: 8px;
-}
+  width: 80%;
+  display: flex;
+  margin: 10px auto;
 
-.category2Button {
-  transition: transform 0.1s;
-  background-color: transparent;
-  border: 10% solid #6c6c6c;
-  border-radius: 8px;
-  font-family: "Dosis", sans-serif;
-  font-size: 150%;
-  text-align: left;
-  margin: auto;
-  width: 100%;
-  height: 50px;
-  animation-delay: 2s;
-  color: #555555;
-
-  animation-delay: 3.5s;  
-}
-
-.category2Button:hover {
-  transition: transform 0.2s;
-  transform: scale(1.1);
-}
-
-.categoryButton {
-  height: 50px;
-  transition: transform 0.1s;
   background-color: #6c6c6c;
   border: none;
   border-radius: 8px;
+
   font-family: "Dosis", sans-serif;
   font-size: 150%;
   text-align: left;
-  margin: auto;
-  width: 100%;
-  animation-delay: 1.75s;
+  
+  transition: transform 0.1s;
 }
 
-.buttonText {
-  margin : auto 0 auto 5%;
-}
-
-.categoryButton:hover {
+.homeCategoryButton:hover {
   transition: transform 0.2s;
   transform: scale(1.1);
 }
 
-
-.oldwebbutton {
-  width: initial;
+.buttonText {
+  display: inline-block;
+  margin : auto 0 auto 5%;
 }
 
 #headerBar {
@@ -148,10 +125,17 @@
   width: 3%;
   height: 3%;
   margin: auto;
+  transition: transform 0.1s;
+}
+
+#headerIcon:hover {
+  transition: transform 0.2s;
+  transform: scale(1.1);
 }
 
 #headerTitle {
-  font-size: 200%;
+  font-size: 180%;
+  padding: 5px 0;
   font-weight: 500;
   margin: 0 0 0 23%;
 }
