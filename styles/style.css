@@ -62,7 +62,7 @@
   height: 100vh;
   min-height: 500px;
   margin: 0 auto;
-  padding: 0 20px 20px 20px;
+  padding: 0;
   background-color: rgb(28, 28, 28);
   background-image: url("../images/noise.png");
   background-size: 512px;
@@ -84,7 +84,7 @@
   font-weight: 700 ;
   font-size: 120%;
   text-align: center;
-  margin: 0 0 2% 0;
+  margin: 2% 0 4% 0;
   color: #6c6c6c;
 }
 
@@ -93,6 +93,7 @@
   width: 80%;
   display: flex;
   margin: 10px auto;
+  position: relative;
 
   background-color: #6c6c6c;
   border: none;
@@ -115,15 +116,24 @@
   margin : auto 0 auto 5%;
 }
 
+.buttonIcon {
+  position: absolute;
+  right: 10px;
+  height: 30px;
+  width: 30px;
+  margin: 10px;
+}
+
 #headerBar {
+  color: #373737;
   margin: 0;
   display: flex;
   flex-wrap: wrap;
 }
 
 #headerIcon {
-  width: 3%;
-  height: 3%;
+  width: 40px;
+  height: 40px;
   margin: auto;
   transition: transform 0.1s;
 }
@@ -137,9 +147,17 @@
   font-size: 180%;
   padding: 5px 0;
   font-weight: 500;
-  margin: 0 0 0 23%;
+  margin: 0 0 0 24%;
 }
 
+#homePageFooter {
+  display: flex;
+  justify-content: center;
+}
+
+#iconAttirbution {
+  color: #6c6c6c;
+}
 
 /* Element  Styles */
 
@@ -169,4 +187,12 @@ header {
   margin: 0;
   height: 2%;
   text-align: center;
+}
+
+hr {
+  margin: 30px 0;
+}
+
+a {
+  color: #ababab;
 }
