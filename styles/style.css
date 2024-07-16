@@ -185,6 +185,8 @@ img {
 }
 
 header {
+	display: flex;
+  	flex-wrap: wrap;
 	background-color: #898989;
 	height: 50px;
 	min-width: 600px;
