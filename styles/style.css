@@ -1,202 +1,199 @@
-/* Animation Styles */
 
 .animation-downwardsFade {
-  animation: downwardsFade 1s ease-out 1s 1 normal both;
+	animation: downwardsFade 1s ease-out 1s 1 normal both;
 }
 
 .animation-basicFade {
-  animation: basicFade 0.5s ease-in 0s 1 normal both;
+	animation: basicFade 0.5s ease-in 0s 1 normal backwards;
 }
 
 .animation-leftSlide {
-  animation: leftSlide 1s ease-out 2s 1 normal backwards;
+	animation: leftSlide 1s ease-out 2s 1 normal backwards;
 }
 
 @keyframes downwardsFade {
-  from {
-    opacity: 0;
-    transform: translateY(-40px);
-  }
-  to {
-    opacity: 1;
-    transform: 0;
-  }
+	from {
+		opacity: 0;
+		transform: translateY(-40px);
+	}
+	to {
+		opacity: 1;
+		transform: 0;
+	}
 }
 
 @keyframes basicFade {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
 }
 
 @keyframes leftSlide {
-  from {
-    opacity: 0;
-    transform: translateX(50%);
-  }
-  to {
-    opacity: 1;
-    transform: 0;
-  }
+	from {
+		opacity: 0;
+		transform: translateX(50%);
+	}
+	to {
+		opacity: 1;
+		transform: 0;
+	}
 }
 
 /* General Class Styles*/
 
 #mainContent {
-  width: 600px;
-  min-width: 600px;
-  height: 100vh;
-  min-height: 600px;
-  margin: 0 auto;
-  padding-top: 20px;
-  background-color: rgb(28, 28, 28);
-  background-image: url("../images/noise.png");
-  background-size: 512px;
-  background-position: center;
-  background-repeat: repeat;
+	width: 600px;
+	min-width: 600px;
+	height: 100vh;
+	min-height: 600px;
+	margin: 0 auto;
+	padding-top: 20px;
+	background-color: rgb(28, 28, 28);
+	background-image: url("../images/noise.png");
+	background-size: 512px;
+	background-position: center;
+	background-repeat: repeat;
 }
 
 .pageTitle {
-  font-size: 250%;
-  font-weight: 400;
-  text-align: center;
-  margin: 0 ;
-  padding: 0;
-  color: #ababab;
+	font-size: 250%;
+	font-weight: 400;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	color: #ababab;
 }
 
 .pageSubtitle {
-  font-weight: 700 ;
-  font-size: 120%;
-  text-align: center;
-  margin: 2% 0 2% 0;
-  color: #6c6c6c;
+	font-weight: 700;
+	font-size: 120%;
+	text-align: center;
+	margin: 2% 0 2% 0;
+	color: #6c6c6c;
 }
 
 .homeCategoryButton {
-  height: 50px;
-  width: 80%;
-  display: flex;
-  margin: 10px auto;
-  position: relative;
+	height: 50px;
+	width: 80%;
+	display: flex;
+	margin: 10px auto;
+	position: relative;
 
-  background-color: #6c6c6c;
-  border: none;
-  border-radius: 8px;
+	background-color: #6c6c6c;
+	border: none;
+	border-radius: 8px;
 
-  font-family: "Dosis", sans-serif;
-  font-size: 150%;
-  text-align: left;
-  
-  transition: transform 0.1s;
+	font-size: 150%;
+	text-align: left;
+
+	transition: transform 0.1s;
 }
 
 .homeCategoryButton:hover {
-  transition: transform 0.2s;
-  transform: scale(1.1);
+	transition: transform 0.2s;
+	transform: scale(1.1);
 }
 
 .buttonText {
-  display: inline-block;
-  margin : auto 0 auto 5%;
+	display: inline-block;
+	margin: auto 0 auto 5%;
 }
 
 .buttonIcon {
-  position: absolute;
-  right: 10px;
-  height: 30px;
-  width: 30px;
-  margin: 10px;
+	position: absolute;
+	right: 10px;
+	height: 30px;
+	width: 30px;
+	margin: 10px;
 }
 
 #headerBar {
-  position: relative;
-  padding: 0;
-  color: #373737;
-  margin: 0;
-  display: flex;
-  flex-wrap: wrap;
-  width: 650px;
-  margin: auto;
-  height: 50px;
-  min-width: 600px;
+	position: relative;
+	padding: 0;
+	color: #373737;
+	margin: 0;
+	display: flex;
+	flex-wrap: wrap;
+	width: 650px;
+	margin: auto;
+	height: 50px;
+	min-width: 600px;
 }
 
 #headerIcon {
-  width: 40px;
-  height: 40px;
-  margin: auto;
-  transition: transform 0.1s;
+	width: 40px;
+	height: 40px;
+	margin: auto;
+	transition: transform 0.1s;
 
-  position: absolute;
-  right: 10px;
-  top: 5px;
-
+	position: absolute;
+	right: 10px;
+	top: 5px;
 }
 
 #headerIcon:hover {
-  transition: transform 0.2s;
-  transform: scale(1.1);
+	transition: transform 0.2s;
+	transform: scale(1.1);
 }
 
 #headerTitle {
-
-  position: absolute;
-  left: 10px;
-  top: 5px;
-
-  font-size: 180%;
-  padding: 0;
-  font-weight: 500;
-  margin: 0;
+	position: relative;
+	font-size: 200%;
+	padding: 0;
+	font-weight: 500;
+	margin: auto 10px;
 }
 
 #homePageFooter {
-  display: flex;
-  justify-content: center;
+	display: flex;
+	justify-content: center;
 }
 
 #iconAttirbution {
-  color: #6c6c6c;
+	color: #6c6c6c;
 }
 
+#testId {
+	display: none;
+	border: 5px solid green;
+}
 
 /* Element  Styles */
 
 html {
-  font-family: "Dosis", sans-serif;
-  font-style: normal;
-  font-weight: 200;
-  background-color: rgb(6, 6, 6);
+    font-family: monospace;
+	font-style: normal;
+	font-weight: 200;
+	background-color: rgb(6, 6, 6);
 }
 
 body {
-  width: 100%;
-  min-width: 600px;
-  height: 100%;
-  min-height: 600px;
-  margin: 0;
+	width: 100%;
+	min-width: 600px;
+	height: 100%;
+	min-height: 600px;
+	margin: 0;
 }
 
 img {
-  display: block;
-  margin: 0 auto;
-  width: 500px;
+	display: block;
+	margin: 0 auto;
+	width: 500px;
 }
 
 header {
-  background-color: #898989;
-  height: 50px;
-  min-width: 600px;
+	background-color: #898989;
+	height: 50px;
+	min-width: 600px;
 }
 
 hr {
-  margin: 30px 0;
+	margin: 30px 0;
 }
 
 a {
-  color: #ababab;
+	color: #ababab;
 }
