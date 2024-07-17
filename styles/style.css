@@ -161,6 +161,11 @@
 	border: 5px solid green;
 }
 
+#competitiveStatistics-article {
+	justify-content: center;
+	color: #ababab;
+}
+
 /* Element  Styles */
 
 html {
