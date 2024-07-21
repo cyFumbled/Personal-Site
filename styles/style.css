@@ -58,6 +58,7 @@
 	background-size: 512px;
 	background-position: center;
 	background-repeat: repeat;
+	overflow-x: hidden;
 }
 
 .pageTitle {
