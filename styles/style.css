@@ -100,6 +100,22 @@
 	transform: scale(1.1);
 }
 
+.homeCategoryButtonPlaceholder {
+    height: 50px;
+	width: 80%;
+	display: flex;
+	margin: 10px auto;
+	position: relative;
+
+	background-color: none;
+	border: 2px solid #6c6c6c;
+	border-radius: 8px;
+
+	font-size: 150%;
+	text-align: left;
+
+}
+
 .buttonText {
 	display: inline-block;
 	margin: auto 0 auto 5%;
