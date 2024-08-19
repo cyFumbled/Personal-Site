@@ -61,6 +61,42 @@
 	overflow-x: hidden;
 }
 
+#gcSideContent {
+	width: 200px;
+	min-width: 200px;
+	height: 100%;
+	min-height: 600px;
+	overflow: overlay;
+	margin: 0 10% 0 10%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: rgb(28, 28, 28);
+	background-image: url("../images/noise.png");
+	background-size: 512px;
+	background-position: center;
+	background-repeat: repeat;
+	overflow-x: hidden;
+	display: inline-block;
+}
+
+#gcMainContent {
+	width: 600px;
+	min-width: 600px;
+	height: 100%;
+	min-height: 600px;
+	overflow: overlay;
+	margin: 0;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: rgb(28, 28, 28);
+	background-image: url("../images/noise.png");
+	background-size: 512px;
+	background-position: center;
+	background-repeat: repeat;
+	overflow-x: hidden;
+	display: inline-block;
+}
+
 .pageTitle {
 	font-size: 250%;
 	font-weight: 400;
